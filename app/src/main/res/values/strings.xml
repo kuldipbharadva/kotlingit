@@ -1,0 +1,19 @@
+<resources>
+    <!--<string name="app_name">LibUsage</string>-->
+
+    <!-- for fcm -->
+    <string name="Notification_Prefs_Name">NotificationPrefs</string>
+    <string name="Key_Notification">KeyNotification</string>
+    <string name="Notification_Settings_Key">NotificationSettingsPrefs</string>
+
+    <!-- google map key -->
+    <!--<string name="google_map_key">AIzaSyDwXOWpB9Y0qAs-OEUCx3SnADzkpVp-BMo</string>-->
+    <!-- Key created in ilaxo ac and project name : LibUsage -->
+    <string name="google_map_key">AIzaSyBXkTqK32NX6p757SRxTWNy5puuNEIsp3w</string>
+
+    <!-- for localization -->
+    <string name="fullName">Full Name</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="mobile">Mobile</string>
+</resources>

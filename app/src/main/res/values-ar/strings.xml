@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="address">عنوان</string>
+    <string name="city">مدينة</string>
+    <string name="fullName">الاسم الكامل</string>
+    <string name="mobile">التليفون المحمول</string>
+</resources>

@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.kotlingithub"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /* This is for flavours */
+    flavorDimensions "version"
+    productFlavors {
+        development {
+//            buildConfigField "boolean", "HAS_DEV_TOOLS", "true"
+//            buildConfigField "String", "API_URL", "\"https://apidev.snap2lead.com/v1_00\""
+//            resValue "string", "content_provider", "com.facebook.app.FacebookContentProvider505087873001818"
+            resValue "string", "app_name", "Kotlin Github"
+        }
+        qa {
+//            buildConfigField "boolean", "HAS_DEV_TOOLS", "true"
+//            buildConfigField "String", "API_URL", "\"https://apiqa.snap2lead.com/v1_00\""
+//            resValue "string", "content_provider", "com.facebook.app.FacebookContentProvider563745497136055"
+            resValue "string", "app_name", "Kotlin Github"
+        }
+        production {
+//            buildConfigField "boolean", "HAS_DEV_TOOLS", "false"
+//            buildConfigField "String", "API_URL", "\"https://api.snap2lead.com/v1_00\""
+//            resValue "string", "content_provider", "com.facebook.app.FacebookContentProvider505085249668747"
+            resValue "string", "app_name", "Kotlin Github"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    /* multiDex */
+    implementation 'com.android.support:multidex:1.0.3'
+
+    /* firebase map-location for tracking */
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    /* for google auth */
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+
+    /* for places */
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+
+    /* for map cluster
+      noinspection GradleDynamicVersion */
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+
+    /* for google places dialog library */
+    implementation 'com.codemybrainsout.placesearchdialog:placesearch:1.0.1'
+
+    /* for facebook */
+    implementation 'com.facebook.android:facebook-login:4.35.0'
+
+    /* for qr code scanner */
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+
+    /* for qr code generator */
+    implementation 'com.google.zxing:core:3.3.2'
+
+    /* crop image */
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+
+    /* for retrofit */
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    implementation 'com.malinskiy:superrecyclerview:1.1.4'
+
+    /* for swipe to delete layout */
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+
+    /* for show-case view */
+    implementation 'me.toptas.fancyshowcase:fancyshowcaseview:1.1.5'
+
+    /* for bottom sheet layout */
+    implementation 'com.flipboard:bottomsheet-core:1.5.3'
+
+    /* for realm database */
+    implementation 'io.realm:realm-android:0.87.4'
+    annotationProcessor 'io.realm:realm-android:0.87.4'
+
+    /* for room database */
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    implementation 'com.andylib:andylib:1.0.7'
+
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.1.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fullName">Nombre completo</string>
+    <string name="city">Ciudad</string>
+    <string name="address">Dirección</string>
+    <string name="mobile">Móvil</string>
+</resources>

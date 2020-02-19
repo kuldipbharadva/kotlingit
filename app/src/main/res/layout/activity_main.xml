@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvCameraGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Camera Gallery"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLocalDatabase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Local Database"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvRealmDb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Realm Database"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvRoomDb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Room Database"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvFirebaseDatabase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Firebase Database"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvGmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Gmail Login"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvFbLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Facebook Login"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTwitterLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Twitter Login"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDeeplink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Deeplink"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLocalization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Localization"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLocationDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Location Dialog"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvSimpleMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Simple Map With Pin"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvSimpleMapPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Simple Map With Places"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCustomPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Custom Google Places"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvNearByPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="NearBy Places"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvMapCluster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Map Cluster"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPaypal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Paypal"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPayTm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="PayTm"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvQrScanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="QR Scanner"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvQrGenerator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="QR Generator"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCountryCodePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Custom Country Code Picker"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvViewPagerUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="View Pager Simple"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvViewPagerCustomTabUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="View Pager With Custom Tab"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvInternetChecking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Internet Checking with Service"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPiPMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="PiP Mode"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvSimpleSwipeToDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Simple Swipe to Delete"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvSwipeToDeleteOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Swipe To Delete With Button"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvParallaxScrolling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Parallax Scrolling"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvShowCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Showcase View"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvBottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_radius"
+                android:gravity="center"
+                android:onClick="onClickEvent"
+                android:padding="15dp"
+                android:text="Bottom Sheet"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
