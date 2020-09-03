@@ -16,4 +16,6 @@
     <string name="city">City</string>
     <string name="address">Address</string>
     <string name="mobile">Mobile</string>
+
+    <string name="please_wait">Please wait…</string>
 </resources>
